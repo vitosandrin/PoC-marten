@@ -1,8 +1,8 @@
 # 🚀 C# .NET PoC - Marten  
 
-![GitHub top language](https://img.shields.io/github/languages/top/your-repository.svg)
-![GitHub last commit](https://img.shields.io/github/last-commit/your-repository.svg)
-![GitHub issues](https://img.shields.io/github/issues/your-repository.svg)
+![GitHub top language](https://img.shields.io/github/languages/top/vitosandrin/PoC-marten)
+![GitHub last commit](https://img.shields.io/github/last-commit/vitosandrin/PoC-marten)
+![GitHub issues](https://img.shields.io/github/issues/vitosandrin/PoC-marten)
 
 ## 📖 About the Project  
 
