@@ -71,7 +71,7 @@ Before starting, ensure you have the following dependencies installed:
  ┣ 📂 tests           # Unit and integration tests
  ┣ 📜 .gitignore      # Git ignored files
  ┣ 📜 README.md       # Project documentation
- ┣ 📜 docker-compose.yml # Docker Compose file
+ ┣ 📜 docker-compose.Development.yml # Docker Compose file
  ┗ 📜 appsettings.json # Application configuration
 ```
 
