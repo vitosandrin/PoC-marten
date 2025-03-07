@@ -1,0 +1,35 @@
+version: "3.9"
+
+services:
+  rabbitmq:
+    container_name: rabbitmq0
+    image: rabbitmq:3-management-alpine
+    ports:
+      - "5672:5672"
+      - "15672:15672"
+    environment:
+      RABBITMQ_DEFAULT_USER: "guest"
+      RABBITMQ_DEFAULT_PASS: "guest"
+      RABBITMQ_DEFAULT_VHOST: "poc"
+
+  postgres:
+    container_name: postgres0
+    image: postgres:15-alpine
+    ports:
+      - "5432:5432"
+    environment:
+      environment:
+      POSTGRES_USER: "user"
+      POSTGRES_PASSWORD: "StrongPassword123!"
+      POSTGRES_DB: "poc"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-U", "marten_user"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+volumes:
+  data:
+  postgres_data:
