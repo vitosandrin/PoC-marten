@@ -1,6 +1,3 @@
-## 📌 **README for C# .NET PoC**  
-
-```md
 # 🚀 C# .NET PoC - Marten  
 
 ![GitHub top language](https://img.shields.io/github/languages/top/your-repository.svg)
