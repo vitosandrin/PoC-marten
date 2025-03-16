@@ -34,23 +34,32 @@ Before starting, make sure you have the following dependencies installed:
 
 ### 🔹 **Step-by-Step Guide**
 
+
+
+docker-compose.Development.Infrastructure.yaml
+
 1. **Clone this repository**
    ```sh
    git clone https://github.com/vitosandrin/PoC-marten.git
    cd PoC-marten
    ```
 
-2. **Restore dependencies**
+2. **Run containers**
+   ```sh
+   docker compose -f docker-compose.Development.Infrastructure.yaml up -d
+   ```
+
+3. **Restore dependencies**
    ```sh
    dotnet restore
    ```
 
-3. **Run the application**
+4. **Run the application**
    ```sh
    dotnet run
    ```
 
-4. **Access the API**
+5. **Access the API**
    - Swagger: [http://localhost:5000/swagger](http://localhost:5000/swagger)
    - API: [http://localhost:5000/api](http://localhost:5000/api)
 
