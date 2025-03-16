@@ -1,99 +1,89 @@
-# 🚀 C# .NET PoC - Marten  
+# 🚀 C# .NET PoC - Marten
 
 ![GitHub top language](https://img.shields.io/github/languages/top/vitosandrin/PoC-marten)
 ![GitHub last commit](https://img.shields.io/github/last-commit/vitosandrin/PoC-marten)
 ![GitHub issues](https://img.shields.io/github/issues/vitosandrin/PoC-marten)
 
-## 📖 About the Project  
+## 📖 About the Project
 
-This repository contains a **Proof of Concept (PoC)** designed to demonstrate [describe the objective of the PoC].  
-The main goal is to validate the technical feasibility of [describe the specific use case] using **C# .NET**.  
+This repository contains a **Proof of Concept (PoC)** to demonstrate the use of **Marten** as an Event Store and ORM in **.NET**.
 
-## 🛠️ Technologies Used  
+The main goal is to validate the technical feasibility of **Marten** within an architecture based on **DDD (Domain-Driven Design)**, **Clean Architecture**, and **CQRS (Command Query Responsibility Segregation)**.
 
-- **.NET [8]**  
-- **ASP.NET Core**  
-- **Entity Framework Core**  
-- **Docker**  
-- **SQL Server / PostgreSQL**  
-- **Swagger for API documentation**  
-- **Other libraries used in the project**  
+## 🛠️ Technologies Used
+
+- **.NET 8**
+- **ASP.NET Core**
+- **Marten** (Event Store & ORM)
+- **Docker**
+- **PostgreSQL**
+- **MediatR** (for CQRS)
+- **Swagger** (API documentation)
 
 ---
 
-## 📦 How to Run the Project  
+## 📦 How to Run the Project
 
-### 🔹 **Prerequisites**  
+### 🔹 **Prerequisites**
 
-Before starting, ensure you have the following dependencies installed:  
+Before starting, make sure you have the following dependencies installed:
 
-- [.NET SDK](https://dotnet.microsoft.com/download)  
-- [Docker](https://www.docker.com/get-started) (if running with containers)  
-- [SQL Server / PostgreSQL](https://www.microsoft.com/sql-server/)  
+- [.NET SDK](https://dotnet.microsoft.com/download)
+- [Docker](https://www.docker.com/get-started)
+- [PostgreSQL](https://www.postgresql.org/download/)
 
-### 🔹 **Step-by-Step Guide**  
+### 🔹 **Step-by-Step Guide**
 
-1. **Clone this repository**  
+1. **Clone this repository**
    ```sh
-   git clone https://github.com/your-username/your-repository.git
-   cd your-repository
+   git clone https://github.com/vitosandrin/PoC-marten.git
+   cd PoC-marten
    ```
 
-2. **Set up environment variables**  
-   - Rename `.env.example` to `.env` and configure the necessary variables.  
-
-3. **Install dependencies**  
+2. **Restore dependencies**
    ```sh
    dotnet restore
    ```
 
-4. **Run the application**  
+3. **Run the application**
    ```sh
    dotnet run
    ```
 
-5. **Access the API**  
-   - Swagger: [http://localhost:5000/swagger](http://localhost:5000/swagger)  
-   - API: [http://localhost:5000/api](http://localhost:5000/api)  
+4. **Access the API**
+   - Swagger: [http://localhost:5000/swagger](http://localhost:5000/swagger)
+   - API: [http://localhost:5000/api](http://localhost:5000/api)
 
 ---
 
-## 🧩 Project Structure  
+## 🧩 Project Structure
 
 ```
-📦 YourProject
+📦 PoC-Marten
  ┣ 📂 src              # Main source code
- ┃ ┣ 📂 Application   # Business logic and use cases
- ┃ ┣ 📂 Domain        # Entities and domain rules
+ ┃ ┣ 📂 Application   # Business logic and use cases (CQRS)
+ ┃ ┣ 📂 Domain        # Entities and domain rules (DDD)
  ┃ ┣ 📂 Infrastructure # Persistence, Repositories, Configurations
- ┃ ┣ 📂 API           # API controllers and endpoints
- ┃ ┗ 📜 Program.cs    # Main application entry point
+ ┃ ┣ 📂 API           # Controllers and endpoints
+ ┃ ┗ 📜 Program.cs    # Application entry point
  ┣ 📂 tests           # Unit and integration tests
  ┣ 📜 .gitignore      # Git ignored files
  ┣ 📜 README.md       # Project documentation
- ┣ 📜 docker-compose.yml # Docker Compose file
- ┗ 📜 appsettings.json # Application configuration
+ ┣ 📜 docker-compose.yml # Docker configuration
+ ┗ 📜 appsettings.json # Application settings
 ```
 
 ---
 
-## 🏗️ Contributing  
+## 🏗️ Contributing
 
-If you want to contribute, follow these steps:  
+If you want to contribute, follow these steps:
 
-1. **Fork the repository**  
-2. **Create a new branch** (`git checkout -b feature-branch`)  
-3. **Make your changes**  
-4. **Commit your changes** (`git commit -m "Add new feature"`)  
-5. **Push to the branch** (`git push origin feature-branch`)  
-6. **Open a Pull Request**  
-
----
-
-## 📜 License  
-
-This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.  
+1. **Fork the repository**
+2. **Create a new branch** (`git checkout -b feature-new-feature`)
+3. **Make your changes**
+4. **Commit your changes** (`git commit -m "Add new feature"`)
+5. **Push to the branch** (`git push origin feature-new-feature`)
+6. **Open a Pull Request**
 
 ---
-
-### ✨ **Happy coding!** 🚀
